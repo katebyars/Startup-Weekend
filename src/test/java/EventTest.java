@@ -39,6 +39,6 @@ public class EventTest {
     }
     @Test public void EventReturnedById() throws Exception {
         Event eventSeven = new Event("StartUp Weekend", "An event");
-        assertEquals(1, eventSeven.getId());
+        assertEquals(1, Event.findById(eventSeven.getId()).getId());
     }
 }
