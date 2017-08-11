@@ -1,0 +1,16 @@
+{{#partial "content"}}
+
+    <h1>Welcome to Sloth Start Up Weekend</h1>
+    <p>It's all sloths, all weekend, coding for hours!!!!</p>
+
+    {{#if events}}
+        {{#each event }}
+         <p>Event{{ name }} </p>
+         <p>{{ description }} <a href="/posts/{{id}}">read more...</a></p>
+        {{/each}}
+    {{else}}
+     <p>No events have been planned!</p>
+    {{/if}}
+{{/partial}}
+
+{{> layout.hbs}}

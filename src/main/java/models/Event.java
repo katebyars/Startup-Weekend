@@ -8,6 +8,7 @@ public class Event {
     private String description;
     private static ArrayList<Event> instances = new ArrayList<>();
     private ArrayList<String> attendees;
+    private int id;
 
 
     public Event (String name, String description) {
@@ -15,6 +16,7 @@ public class Event {
         this.description = description;
         this.attendees = attendees;
         instances.add(this);
+        this.id = instances.size();
     }
 
     public String getName() {
@@ -41,5 +43,8 @@ public class Event {
         instances.clear();
     }
 
+    public int getId() {
+        return 0;
+    }
 }
 

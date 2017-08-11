@@ -33,4 +33,9 @@ public class EventTest {
         assertTrue(Event.getAllEvents().contains(eventFour));
         assertTrue(Event.getAllEvents().contains(eventFive));
     }
+    @Test public void EventInstantiatesWithAnId_True() {
+        Event eventSix = new Event("StartUp Weekend", "An event");
+        assertEquals(7, eventSix.getId());
+
+    }
 }
