@@ -40,16 +40,16 @@ public class App {
 
         //show an individual event
 //        get("/posts/:id", (req, res) -> {
-//            Map<String, Object> model = new HashMap<>();
-//            int idOfEvent = Integer.parseInt(req.params("id")); //pull id - must match route segment
-//            Event findEvent = Event.findById(idOfPostToFind); //use it to find post
-//            model.put("post", foundPost); //add it to model for template to display
-//            return new ModelAndView(model, "post-detail.hbs"); //individual post page.
-//        }, new HandlebarsTemplateEngine());
-
-        //show a form to update an event
-        //process a form to update an event
-        //delete an event
+////            Map<String, Object> model = new HashMap<>();
+////            int idOfEvent = Integer.parseInt(req.params("id"));
+////            Event findEvent = Event.findById(idOfPostToFind); //use it to find post
+////            model.put("post", foundPost); //add it to model for template to display
+////            return new ModelAndView(model, "post-detail.hbs"); //individual post page.
+////        }, new HandlebarsTemplateEngine());
+//
+//        //show a form to update an event
+//        //process a form to update an event
+//        //delete an event
+//        }
     }
-
 }

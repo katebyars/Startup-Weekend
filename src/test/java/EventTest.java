@@ -14,7 +14,7 @@ public class EventTest {
         Event.clearAllEvents();
     }
 
-    @Test public void EventInstantiates_True () {
+    @Test public void EventInstantiates_True () throws Exception{
         Event eventOne = new Event("StartUp Weekend One", "event");
         assertTrue(eventOne instanceof Event);
     }
@@ -22,7 +22,7 @@ public class EventTest {
         Event eventTwo = new Event("StartUp Weekend", "event");
         assertEquals("StartUp Weekend", eventTwo.getName());
     }
-    @Test public void allEventsAreCorrectlyReturned_True () {
+    @Test public void allEventsAreCorrectlyReturned_True ()throws Exception {
         Event eventThree = new Event("StartUp Weekend", "An event");
         Event eventFour = new Event("StartUp Weekend", "An event");
         assertEquals(2, Event.getAllEvents().size());
@@ -33,9 +33,12 @@ public class EventTest {
         assertTrue(Event.getAllEvents().contains(eventFour));
         assertTrue(Event.getAllEvents().contains(eventFive));
     }
-    @Test public void EventInstantiatesWithAnId_True() {
+    @Test public void EventInstantiatesWithAnId_True() throws Exception {
         Event eventSix = new Event("StartUp Weekend", "An event");
         assertEquals(1, eventSix.getId());
-
+    }
+    @Test public void EventReturnedById() throws Exception {
+        Event eventSeven = new Event("StartUp Weekend", "An event");
+        assertEquals(1, eventSeven.getId());
     }
 }

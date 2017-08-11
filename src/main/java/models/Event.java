@@ -46,5 +46,8 @@ public class Event {
     public int getId() {
         return id;
     }
+    public static Event findById(int id) {
+        return null;
+    }
 }
 
