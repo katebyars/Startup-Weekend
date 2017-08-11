@@ -36,5 +36,9 @@ public class Event {
     public static ArrayList<Event> getAll(){
         return instances;
     }
+
+    public static void clearAllEvents () {
+        instances.clear();
+    }
 }
 

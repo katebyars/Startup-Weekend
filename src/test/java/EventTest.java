@@ -11,6 +11,7 @@ public class EventTest {
 
     @After
     public void tearDown() throws Exception {
+        Event.clearAllEvents();
     }
 
     @Test public void EventInstantiates_True () {
@@ -24,6 +25,6 @@ public class EventTest {
     @Test public void allEventsAreCorrectlyReturned_True () {
         Event eventThree = new Event("StartUp Weekend", "An event");
         Event eventFour = new Event("StartUp Weekend", "An event");
-        assertEquals(0, Event.getAll().size());
+        assertEquals(2, Event.getAll().size());
     }
 }
