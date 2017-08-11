@@ -33,12 +33,13 @@ public class Event {
         return attendees;
     }
 
-    public static ArrayList<Event> getAll(){
-        return instances;
+    public static ArrayList<Event> getAllEvents(){
+        return null;
     }
 
     public static void clearAllEvents () {
         instances.clear();
     }
+
 }
 

@@ -25,6 +25,12 @@ public class EventTest {
     @Test public void allEventsAreCorrectlyReturned_True () {
         Event eventThree = new Event("StartUp Weekend", "An event");
         Event eventFour = new Event("StartUp Weekend", "An event");
-        assertEquals(2, Event.getAll().size());
+        assertEquals(2, Event.getAllEvents().size());
+    }
+    @Test public void allEventsContainsAllEvents_True() {
+        Event eventFour = new Event("StartUp Weekend", "An event");
+        Event eventFive = new Event("StartUp Weekend", "An event");
+        assertTrue(Event.getAllEvents().contains(eventFour));
+        assertTrue(Event.getAllEvents().contains(eventFive));
     }
 }
