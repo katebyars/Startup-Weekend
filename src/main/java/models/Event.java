@@ -34,7 +34,7 @@ public class Event {
     }
 
     public static ArrayList<Event> getAllEvents(){
-        return null;
+        return instances;
     }
 
     public static void clearAllEvents () {
