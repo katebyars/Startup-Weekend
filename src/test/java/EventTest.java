@@ -35,7 +35,7 @@ public class EventTest {
     }
     @Test public void EventInstantiatesWithAnId_True() {
         Event eventSix = new Event("StartUp Weekend", "An event");
-        assertEquals(7, eventSix.getId());
+        assertEquals(1, eventSix.getId());
 
     }
 }
