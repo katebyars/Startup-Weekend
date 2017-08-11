@@ -14,7 +14,12 @@ public class EventTest {
     }
 
     @Test public void EventInstantiates_True () {
-        Event event = new Event();
-        assertTrue(event instanceof Event);
+        Event eventOne = new Event("StartUp Weekend One");
+        assertTrue(eventOne instanceof Event);
+    }
+    @Test public void EventHasAName_True () {
+        Event eventTwo = new Event("StartUp Weekend");
+        assertEquals("StartUp Weekend", eventTwo.getName());
+
     }
 }
