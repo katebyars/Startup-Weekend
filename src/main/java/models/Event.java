@@ -10,7 +10,7 @@ public class Event {
     private ArrayList<String> attendees;
 
 
-    public Event (String name) {
+    public Event (String name, String description) {
         this.name = name;
         this.description = description;
         this.attendees = attendees;
@@ -31,6 +31,10 @@ public class Event {
 
     public ArrayList<String> getAttendees() {
         return attendees;
+    }
+
+    public static ArrayList<Event> getAll(){
+        return instances;
     }
 }
 

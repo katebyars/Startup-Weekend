@@ -14,12 +14,16 @@ public class EventTest {
     }
 
     @Test public void EventInstantiates_True () {
-        Event eventOne = new Event("StartUp Weekend One");
+        Event eventOne = new Event("StartUp Weekend One", "event");
         assertTrue(eventOne instanceof Event);
     }
     @Test public void EventHasAName_True () {
-        Event eventTwo = new Event("StartUp Weekend");
+        Event eventTwo = new Event("StartUp Weekend", "event");
         assertEquals("StartUp Weekend", eventTwo.getName());
-
+    }
+    @Test public void allEventsAreCorrectlyReturned_True () {
+        Event eventThree = new Event("StartUp Weekend", "An event");
+        Event eventFour = new Event("StartUp Weekend", "An event");
+        assertEquals(0, Event.getAll().size());
     }
 }
